@@ -10,6 +10,7 @@ import Calendar from './pages/Calendar'
 import Chart from './pages/Chart'
 import Category from './pages/Dashboard/Category'
 import ECommerce from './pages/Dashboard/ECommerce'
+import Orders from './pages/Dashboard/Orders'
 import Products from './pages/Dashboard/Products'
 import FormElements from './pages/Form/FormElements'
 import FormLayout from './pages/Form/FormLayout'
@@ -60,6 +61,15 @@ function App() {
             <>
               <PageTitle title="Products" />
               <Products />
+            </>
+          }
+        />
+        <Route
+          path="/orders"
+          element={
+            <>
+              <PageTitle title="Orders" />
+              <Orders />
             </>
           }
         />
