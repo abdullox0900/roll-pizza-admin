@@ -25,6 +25,9 @@ const CategoryTable: React.FC = () => {
         }
     }
 
+    console.log(data)
+
+
     useEffect(() => {
         getData()
     }, [])

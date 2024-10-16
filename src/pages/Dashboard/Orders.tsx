@@ -107,7 +107,7 @@ const Orders: React.FC = () => {
                             className="grid grid-cols-7 border-b border-stroke dark:border-strokedark"
                         >
                             <div className="flex items-center p-2.5 xl:p-5">
-                                <p className="text-black dark:text-white">{order?.id}</p>
+                                <p className="text-black dark:text-white">😀</p>
                             </div>
                             <div className="flex items-center p-2.5 xl:p-5">
                                 <p className="text-black dark:text-white">{order?.name}</p>
@@ -119,7 +119,7 @@ const Orders: React.FC = () => {
                                 <p className="text-black dark:text-white">{order?.address.slice(0, 15)}...</p>
                             </div>
                             <div className="flex items-center p-2.5 xl:p-5">
-                                <p className="text-meta-3">${order?.totalPrice}</p>
+                                <p className="text-meta-3">{order?.totalPrice}₽</p>
                             </div>
                             <div className="flex items-center p-2.5 xl:p-5">
                                 <p className="text-black dark:text-white">{new Date(order?.date).toLocaleDateString()}</p>
@@ -159,7 +159,7 @@ const Orders: React.FC = () => {
                             <ul className="list-disc list-inside mt-2">
                                 {selectedOrder.items.map((item, index) => (
                                     <li key={index}>
-                                        {item.name} - {item.quantity} шт. (${item.price} за шт.)
+                                        {item.name} - {item.quantity} шт. ({item.price}₽ за шт.)
                                     </li>
                                 ))}
                             </ul>
