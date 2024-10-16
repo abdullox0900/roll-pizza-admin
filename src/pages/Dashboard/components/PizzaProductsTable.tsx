@@ -213,7 +213,7 @@ const PizzaProductsTable: React.FC = () => {
                                 <p className="text-black dark:text-white">{pizza.name}</p>
                             </div>
                             <div className="flex items-center p-2.5 xl:p-5">
-                                <p className="text-black dark:text-white">${pizza.price}</p>
+                                <p className="text-black dark:text-white">{pizza.price}₽</p>
                             </div>
                             <div className="flex items-center p-2.5 xl:p-5">
                                 <p className="text-black dark:text-white">{pizza.categoryName}</p>
